@@ -3,25 +3,70 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: 0 0% 0%;
+  --background-light: 0 0% 16%;
+
+  --primary: 0 0% 96%;
+  --primary-muted: 0 0% 94%;
+
+  --border: 217.2 32.6% 15%;
+
+  --clr-accent: rgb(0, 255, 11);
+  --clr-green: #1A7A3C;
+  --clr-orange: #ec532d;
+  --clr-purple: #6460d8;
+
+
+  --transition: cubic-bezier(.5, .1, 0, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+body {
+  color: hsl(var(--primary));
+  background: hsl(var(--background));
+}
+
+.phrase-txt p {
+  font-size: 4rem;
+  line-height: 0.8;
+  font-weight: 700;
+}
+
+.phrase-txt span {
+  opacity: 0.2;
+}
+
+.hero__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  object-fit: cover;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  z-index: 1;
+}
+
+@media (max-width: 968px) {
+  .phrase-txt p {
+    font-size: 3rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width: 768px) {
+  .phrase-txt p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .phrase-txt p {
+    font-size: 2rem;
+    line-height: 0.7;
+  }
 }
