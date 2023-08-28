@@ -33,12 +33,7 @@ export function ScrollProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (!lenis) {
-      setLenis(
-        new Lenis({
-          smoothTouch: true,
-          syncTouch: true,
-        })
-      )
+      setLenis(new Lenis())
     }
 
     requestAnimationFrame(raf)

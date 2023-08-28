@@ -3,7 +3,6 @@
 import { ReactElement, useCallback, useEffect, useRef } from "react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import gsap from "gsap"
-import { Star } from "@/app/icons"
 import Wrapper from "./wrapper"
 
 const phrase =
