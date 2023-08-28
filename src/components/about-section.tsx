@@ -1,9 +1,18 @@
 "use client"
 
-import { ReactElement, useCallback, useEffect, useRef } from "react"
+import {
+  MouseEventHandler,
+  ReactElement,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+} from "react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import gsap from "gsap"
 import Wrapper from "./wrapper"
+import SvgCurve from "./svg-curve"
+import Button from "./button"
 
 const phrase =
   "I am Leul michael, a full-stack software developer, who loves to create, modify, design, and develop websites. I design and develop digital solutions with attractive and well-coded interface which are perceived as easier to use and make users loyal."
@@ -66,8 +75,20 @@ const AboutSection = () => {
       >
         <div className="grid lg:grid-cols-[150px_1fr] grid-cols-1 items-start gap-8">
           <h1 className="text-2xl font-bold py-2">About</h1>
-          <div className="phrase-txt flex flex-wrap gap-2 font-bold">
-            {splitWords(phrase)}
+          <div className="flex flex-col w-full">
+            <div className="phrase-txt flex flex-wrap gap-2 font-bold">
+              {splitWords(phrase)}
+            </div>
+            <div className="flex flex-col my-20 gap-8 w-full">
+              <SvgCurve />
+              <p className="lg:text-5xl md:text-[2.65rem] text-[2.25rem] leading-none">
+                Helping brands to stand out in the digital era.
+              </p>
+              <Button
+                name="More about me"
+                className="px-6 py-2 self-start bg-accent border-0 text-xl capitalize font-semibold rounded-full"
+              />
+            </div>
           </div>
         </div>
       </section>

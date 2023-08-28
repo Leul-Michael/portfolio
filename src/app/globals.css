@@ -11,7 +11,7 @@
 
   --border: 217.2 32.6% 15%;
 
-  --clr-accent: rgb(0, 255, 11);
+  --clr-accent: 123 100% 45%;
   --clr-green: #1A7A3C;
   --clr-orange: #ec532d;
   --clr-purple: #6460d8;
@@ -60,13 +60,13 @@ body {
 
 @media (max-width: 768px) {
   .phrase-txt p {
-    font-size: 2.5rem;
+    font-size: 2.65rem;
   }
 }
 
 @media (max-width: 640px) {
   .phrase-txt p {
-    font-size: 2rem;
+    font-size: 2.25rem;
     line-height: 0.7;
   }
 }
