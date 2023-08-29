@@ -79,8 +79,11 @@ const SvgCurve = () => {
         onMouseMove={manageMouseMove}
         className="relative hover:h-[150px] h-[40px] w-full flex z-[1] -top-[20px] hover:-top-[75px]"
       ></span>
-      <svg className="absolute w-full h-[100px] -top-[50px]">
-        <path className="stroke-1 stroke-primary h-full" ref={path}></path>
+      <svg className="absolute w-full h-[100px] min-w-full -top-[50px] left-0">
+        <path
+          className="stroke-1 stroke-primary h-full w-full"
+          ref={path}
+        ></path>
       </svg>
     </div>
   )
