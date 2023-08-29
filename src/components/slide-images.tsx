@@ -59,18 +59,19 @@ const SlideImages = () => {
     >
       <motion.div
         style={{ x: x1 }}
-        className="relative w-[120vw] -left-[10vw] flex gap-4"
+        className="relative w-[120vw] right-[40vw] md:right-[20vw] flex gap-4"
       >
         {slider1.map((project, index) => {
           return (
             <div
               key={index}
-              className="min-w-[150px] w-[25%]  min-h-[100px]  h-[100px] sm:h-[45vh] flex items-center justify-center"
+              className="min-w-[200px] w-[25%]  min-h-[100px] h-[200px] sm:h-[45vh] flex items-center justify-center"
               style={{ backgroundColor: project.color }}
             >
               <div className="w-[80%] h-[80%] relative">
                 <Image
-                  fill={true}
+                  fill
+                  sizes="100vw"
                   alt={"image"}
                   src={`/images/${project.src}`}
                   className="object-cover"
@@ -88,12 +89,13 @@ const SlideImages = () => {
           return (
             <div
               key={index}
-              className="min-w-[150px] w-[25%] min-h-[100px] h-[100px] sm:h-[45vh] flex items-center justify-center"
+              className="min-w-[200px] w-[25%] min-h-[100px] h-[200px] sm:h-[45vh] flex items-center justify-center"
               style={{ backgroundColor: project.color }}
             >
               <div key={index} className="w-[80%] h-[80%] relative">
                 <Image
-                  fill={true}
+                  fill
+                  sizes="100vw"
                   alt={"image"}
                   src={`/images/${project.src}`}
                 />

@@ -86,7 +86,7 @@ const AboutSection = () => {
               </p>
               <Button
                 name="More about me"
-                className="px-6 py-2 self-start bg-accent border-0 text-xl capitalize font-semibold rounded-full"
+                className="px-6 py-2 self-start bg-accent border-0 text-xl text-background capitalize font-semibold rounded-[100vw]"
               />
             </div>
           </div>

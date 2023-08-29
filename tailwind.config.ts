@@ -22,6 +22,10 @@ const config: Config = {
       },
       colors: {
         border: "hsl(var(--border))",
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          // muted: "hsl(var(--primary-muted))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           muted: "hsl(var(--primary-muted))",
