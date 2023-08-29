@@ -1,8 +1,8 @@
 "use client"
 
-import { clsx } from "clsx"
 import { ButtonHTMLAttributes, DetailedHTMLProps } from "react"
 import Magenet from "./magenet"
+import { cn } from "@/lib/utils"
 
 type ButtonProps = {
   name: string
@@ -17,10 +17,8 @@ const Button = (props: ButtonProps) => {
   return (
     <Magenet>
       <button
-        className={clsx(
-          "border border-primary-muted rounded-md",
-          className ?? ""
-        )}
+        data-before-text={name}
+        className={cn("btn border border-primary-muted", className ?? "")}
         {...rest}
       >
         {name}

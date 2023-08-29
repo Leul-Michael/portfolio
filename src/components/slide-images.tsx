@@ -55,7 +55,7 @@ const SlideImages = () => {
   return (
     <section
       ref={container}
-      className="flex flex-col gap-8 relative z-[1] bg-primary h-full justify-center overflow-hidden"
+      className="flex flex-col gap-8 relative z-[1] bg-primary h-full justify-center overflow-hidden mb-20"
     >
       <motion.div
         style={{ x: x1 }}
@@ -71,7 +71,7 @@ const SlideImages = () => {
               <div className="w-[80%] h-[80%] relative">
                 <Image
                   fill
-                  sizes="100vw"
+                  sizes="(max-width: 0px) 100vw"
                   alt={"image"}
                   src={`/images/${project.src}`}
                   className="object-cover"
@@ -95,7 +95,7 @@ const SlideImages = () => {
               <div key={index} className="w-[80%] h-[80%] relative">
                 <Image
                   fill
-                  sizes="100vw"
+                  sizes="(max-width: 0px) 100vw"
                   alt={"image"}
                   src={`/images/${project.src}`}
                 />

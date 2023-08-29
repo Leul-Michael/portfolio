@@ -1,5 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react"
-import clsx from "clsx"
+import { cn } from "@/lib/utils"
 
 type WrapperProps = {
   children: ReactNode
@@ -10,8 +10,8 @@ const Wrapper = (props: WrapperProps) => {
   const { children, className, ...rest } = props
   return (
     <div
-      className={clsx(
-        "max-w-screen-2xl mx-auto md:px-10 px-5",
+      className={cn(
+        "max-w-screen-2xl mx-auto md:px-10 px-5 w-full",
         className ?? ""
       )}
       {...rest}

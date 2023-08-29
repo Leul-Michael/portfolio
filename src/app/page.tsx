@@ -1,5 +1,6 @@
 import AboutSection from "@/components/about-section"
 import Hero from "@/components/hero"
+import Projects from "@/components/projects"
 import SlideImages from "@/components/slide-images"
 
 export default function Home() {
@@ -8,8 +9,7 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <SlideImages />
-      <section className="w-full h-screen"></section>
-      <section className="w-full h-screen"></section>
+      <Projects />
     </>
   )
 }

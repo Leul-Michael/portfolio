@@ -11,7 +11,8 @@
 
   --border: 217.2 32.6% 15%;
 
-  --clr-accent: 72 97% 49%;
+  --clr-accent: 108 100% 65%;
+  /* --clr-accent: 72 97% 49%; */
   /* --clr-accent: 123 100% 55%; */
   --clr-green: #1A7A3C;
   --clr-orange: #ec532d;
@@ -51,6 +52,51 @@ body {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   z-index: 1;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  position: absolute;
+  content: attr(data-before-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(var(--clr-accent));
+  color: hsl(var(--background));
+  transition: top 0.35s var(--transition);
+  font-weight: 700;
+}
+
+.btn:hover::before {
+  top: 0;
+}
+
+.projects {
+  transition: background 0.35s var(--transition);
+}
+
+.project {
+  transition: opacity 0.5s var(--transition), transform 0.5s var(--transition);
+}
+
+.project-image {
+  transition: border-radius 0.35s var(--transition);
+}
+
+.project:hover {
+  transform: scale(1);
+}
+
+.project:hover .project-image {
+  border-radius: 70vw;
 }
 
 @media (max-width: 968px) {
