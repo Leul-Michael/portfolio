@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils"
+import { useHoverdBlogId, useSetHoverdBlogId } from "@/lib/zustand"
 import React from "react"
 
 type Blog = {
@@ -15,15 +17,27 @@ type BlogExcerptProps = {
 }
 
 const BlogExcerpt = ({ manageModal, blog }: BlogExcerptProps) => {
+  const hoverId = useHoverdBlogId()
+  const setHoverId = useSetHoverdBlogId()
+
   return (
     <article
       onMouseEnter={(e) => {
         manageModal(true, blog.slug, e.clientX, e.clientY)
+        setHoverId(`${blog.slug}`)
       }}
       onMouseLeave={(e) => {
         manageModal(false, blog.slug, e.clientX, e.clientY)
+        setHoverId("")
       }}
-      className="w-full flex flex-col py-8 border-t border-border h-full"
+      className={cn(
+        "blog w-full flex flex-col py-8 border-t border-border h-full",
+        hoverId !== ""
+          ? hoverId === `${blog.slug}`
+            ? "opacity-100 scale-100"
+            : "opacity-50 scale-[.95]"
+          : "scale-[.98]"
+      )}
     >
       <div className="grid grid-cols-layout-300 md:grid-cols-layout-500 h-full gap-8 md:gap-16 items-center">
         <div className="flex flex-col justify-between items-start gap-4 h-full">

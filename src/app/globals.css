@@ -94,7 +94,8 @@ body {
 }
 
 .project,
-.project img {
+.project img,
+.blog {
   transition: opacity 0.5s var(--transition), transform 0.5s var(--transition);
 }
 
