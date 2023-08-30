@@ -16,7 +16,7 @@ type ScrollContextProps = {
 
 const ScrollContext = createContext({} as ScrollContextProps)
 
-export default function useScrollProvider() {
+export default function useScroll() {
   return useContext(ScrollContext)
 }
 

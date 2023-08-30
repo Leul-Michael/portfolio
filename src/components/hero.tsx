@@ -3,7 +3,7 @@ import Wrapper from "./wrapper"
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col w-full h-full">
+    <section id="hero" className="relative flex flex-col w-full h-full">
       <video
         className="hero__video"
         width="100%"

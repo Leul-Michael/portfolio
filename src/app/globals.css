@@ -33,6 +33,14 @@ body {
   background: hsl(var(--background));
 }
 
+/* Page Loader */
+.loader-svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 200px);
+}
+
 .phrase-txt p {
   font-size: 4rem;
   line-height: 0.8;
@@ -64,7 +72,8 @@ body {
   overflow: hidden;
 }
 
-.btn:hover {
+.btn:hover,
+.btn.hovered {
   border: 0;
 }
 
@@ -85,7 +94,8 @@ body {
   border-radius: 100vw;
 }
 
-.btn:hover::before {
+.btn:hover::before,
+.btn.hovered::before {
   top: 0;
 }
 

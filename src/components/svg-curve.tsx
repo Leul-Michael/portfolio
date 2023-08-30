@@ -1,6 +1,9 @@
+"use client"
+
 import { MouseEventHandler, useCallback, useEffect, useRef } from "react"
 
 const SvgCurve = () => {
+  const containter = useRef<HTMLDivElement | null>(null)
   const path = useRef<SVGPathElement | null>(null)
   let progress = 0
   let x = 0.5
@@ -41,7 +44,9 @@ const SvgCurve = () => {
 
   const setPath = useCallback(
     (value: number) => {
-      const width = window.innerWidth * 0.7
+      const width = containter.current?.clientWidth
+        ? containter.current?.clientWidth
+        : window.innerWidth * 1
       path.current?.setAttributeNS(
         null,
         "d",
@@ -68,7 +73,7 @@ const SvgCurve = () => {
   }
 
   return (
-    <div className="w-full h-[1px] relative">
+    <div ref={containter} className="w-full h-[1px] relative">
       <span
         onMouseEnter={() => {
           animateIn()

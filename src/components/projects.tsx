@@ -34,7 +34,7 @@ const Projects = () => {
         </div>
         <Button
           name="More Projects"
-          className="px-6 py-2 self-start text-xl capitalize font-semibold hover:border-accent rounded-full text-primary-muted"
+          className="px-6 py-2 self-start text-xl capitalize font-semibold rounded-full text-primary-muted"
         />
       </Wrapper>
     </section>
