@@ -1,0 +1,29 @@
+{
+    "blogs": [
+
+      {
+        "slug": 0,
+        "imgPath": "/images/c2montreal.png",
+        "title": "10 Ways To Improve Your Next.js App Performance",
+        "desc": "With this article, I will share some practices you can use to improve your app performance and architecture. Next.js makes it easier for developers to create and build a web application in very few steps.",
+        "color": "bg-project",
+        "min_read": 2
+      },
+      {
+        "slug": 1,
+        "imgPath": "/images/officestudio.png",
+        "title": "Server-Side Session in Next.js v13 App Router",
+        "desc": "Let's assume this scenario: you created a Next.js app using the new App router, and you need to store sensitive user session data like access token, refresh token, or maybe just form data that you want to access.",
+        "color": "bg-project",
+        "min_read": 5
+      },
+      {
+        "slug": 2,
+        "imgPath": "/images/locomotive.avif",
+        "title": "Do brands should enter the Metaverse?",
+        "desc": "I've been invited by the French media La Réclame to talk about the Metaverse and why brands should enter this new world.",
+        "color": "bg-project",
+        "min_read": 4
+      }
+    ]
+}

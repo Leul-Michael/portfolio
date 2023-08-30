@@ -1,24 +1,42 @@
 import React from "react"
 
-const BlogExcerpt = () => {
+type Blog = {
+  slug: number
+  imgPath: string
+  title: string
+  desc: string
+  color: string
+  min_read: number
+}
+
+type BlogExcerptProps = {
+  manageModal: (active: boolean, index: number, x: number, y: number) => void
+  blog: Blog
+}
+
+const BlogExcerpt = ({ manageModal, blog }: BlogExcerptProps) => {
   return (
-    <article className="w-full flex flex-col py-8 border-t border-border h-full">
-      <div className="grid grid-cols-layout-300 md:grid-cols-layout-500 h-full gap-8 md:gap-16">
-        <div className="flex flex-col justify-between items-start h-full">
-          <p className="text-sm">2 mins</p>
+    <article
+      onMouseEnter={(e) => {
+        manageModal(true, blog.slug, e.clientX, e.clientY)
+      }}
+      onMouseLeave={(e) => {
+        manageModal(false, blog.slug, e.clientX, e.clientY)
+      }}
+      className="w-full flex flex-col py-8 border-t border-border h-full"
+    >
+      <div className="grid grid-cols-layout-300 md:grid-cols-layout-500 h-full gap-8 md:gap-16 items-center">
+        <div className="flex flex-col justify-between items-start gap-4 h-full">
+          <p className="text-sm text-primary-muted/80">{blog.min_read} mins</p>
           <h1 className="text-[2.5rem] font-semibold leading-[0.8]">
-            Some vlog title
+            {blog.title}
           </h1>
           <div className="flex items-center gap-4">
             <p className="text-lg font-semibold">Leul Michael</p>
-            <p className="text-sm text-primary-muted">Jan 20</p>
+            <p className="text-sm text-primary-muted/80">Jan 20</p>
           </div>
         </div>
-        <p className="text-2xl font-medium leading-none h-full">
-          Market research firm Gartner predicts that by 2026 one-fourth of
-          people will spend at least 1 hour a day in metaverse worlds. We list 5
-          key steps to help you take your brand into the metaverse.
-        </p>
+        <p className="text-2xl font-medium leading-none">{blog.desc}</p>
       </div>
     </article>
   )

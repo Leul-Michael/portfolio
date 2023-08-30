@@ -15,7 +15,7 @@ const slider1 = [
   },
   {
     color: "#e3e3e3",
-    src: "funny.jpg",
+    src: "c2.png",
   },
   {
     color: "#21242b",
@@ -30,11 +30,11 @@ const slider2 = [
   },
   {
     color: "#e5e0e1",
-    src: "panda.jpg",
+    src: "nextaddis.jpg",
   },
   {
     color: "#d7d4cf",
-    src: "powell.jpg",
+    src: "mobile.jpg",
   },
   {
     color: "#e1dad6",
@@ -98,6 +98,7 @@ const SlideImages = () => {
                   sizes="(max-width: 0px) 100vw"
                   alt={"image"}
                   src={`/images/${project.src}`}
+                  className="object-cover"
                 />
               </div>
             </div>
