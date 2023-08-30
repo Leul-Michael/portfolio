@@ -36,7 +36,7 @@ const BlogExcerpt = ({ manageModal, blog }: BlogExcerptProps) => {
           ? hoverId === `${blog.slug}`
             ? "opacity-100 scale-100"
             : "opacity-50 scale-[.95]"
-          : "scale-[.98]"
+          : ""
       )}
     >
       <div className="grid grid-cols-layout-300 md:grid-cols-layout-500 h-full gap-8 md:gap-16 items-center">
