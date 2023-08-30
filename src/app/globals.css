@@ -18,6 +18,11 @@
   --clr-orange: #ec532d;
   --clr-purple: #6460d8;
 
+  --project-1-op: 242 61% 61%;
+  --project-2-op: 141 65% 29%;
+  --project-3-op: 108 100% 65%;
+  --project-4-op: 12 83% 70%;
+
 
   --transition: cubic-bezier(.5, .1, 0, 1);
 }
@@ -59,6 +64,10 @@ body {
   overflow: hidden;
 }
 
+.btn:hover {
+  border: 0;
+}
+
 .btn::before {
   position: absolute;
   content: attr(data-before-text);
@@ -73,6 +82,7 @@ body {
   color: hsl(var(--background));
   transition: top 0.35s var(--transition);
   font-weight: 700;
+  border-radius: 100vw;
 }
 
 .btn:hover::before {
@@ -83,7 +93,8 @@ body {
   transition: background 0.35s var(--transition);
 }
 
-.project {
+.project,
+.project img {
   transition: opacity 0.5s var(--transition), transform 0.5s var(--transition);
 }
 
@@ -95,9 +106,11 @@ body {
   transform: scale(1);
 }
 
-.project:hover .project-image {
-  border-radius: 70vw;
+.project:hover img {
+  transform: scale(1.2);
 }
+
+
 
 @media (max-width: 968px) {
   .phrase-txt p {

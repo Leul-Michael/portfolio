@@ -9,7 +9,7 @@
           "Website — Full-stack — Front-End — Direct Messaging - React — Next js — Prisma - PostgreSql - Pusher — Animation — Modern",
         "desc": "RemoteHive is an American worldwide employment website for job listings launched in November 2023.",
         "url": "https://remotehive.io",
-        "color": "bg-[#635fd81a]"
+        "color": "bg-project"
       },
       {
         "slug": "pixie",
@@ -20,7 +20,7 @@
         "desc": "A portfolio for PixieAutumn, who is An Irish - American Director of Photography based in LA.",
         "url": "https://pixie-studios.netlify.app/",
         "github": "https://github.com/Leul-Michael/tuttor",
-        "color": "bg-[#1a7a3c1a]"
+        "color": "bg-project-one"
       },
       {
         "slug": "tuttor",
@@ -31,7 +31,7 @@
         "desc": "A website built using Typescript in Next js where users can find Tutors for their needs and for tutors find the job that fits their need.",
         "url": "https://tuttor.vercel.app/",
         "github": "https://github.com/Leul-Michael/tuttor",
-        "color": "bg-[#70ff4d1a]"
+        "color": "bg-project-two"
       },
       {
         "slug": "dallol",
@@ -42,7 +42,7 @@
         "desc": "An Ecommerce website built using React and PostgreSql , used for shopping sneakers. This website uses LocalStorage to store user cart items. And is still in progress",
         "url": "https://dallol.netlify.app/",
         "github": "https://github.com/Leul-Michael/eccore",
-        "color": "bg-[#f28c731a]"
+        "color": "bg-project-three"
       },
       {
         "slug": "landof_origins",
@@ -51,7 +51,7 @@
         "state": "Website — React — Framer-motion — Design — Developement",
         "desc": "Ethiopia is the latest destination to be awarded the World Travel & Tourism Council (WTTC) Safe Travels Stamp...",
         "url": "https://landoforigins.netlify.app",
-        "color": "bg-[#635fd81a]"
+        "color": "bg-project-three"
       },
       {
         "slug": "t_rex",
@@ -61,7 +61,7 @@
           "Website — Full-stack — Front-End — MERN — React — JSON — Design — Developement",
         "desc": "A Barber shop website build using React and Framer Motion for animation",
         "url": "https://t-barber.netlify.app/",
-        "color": "bg-[#635fd81a]"
+        "color": "bg-project-three"
       }
   ]
 }

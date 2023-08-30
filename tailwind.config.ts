@@ -16,6 +16,7 @@ const config: Config = {
       gridTemplateColumns: {
         "layout-300": "repeat(auto-fill, minmax(300px, 1fr))",
         "layout-400": "repeat(auto-fill, minmax(400px, 1fr))",
+        "layout-500": "repeat(auto-fill, minmax(500px, 1fr))",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -29,6 +30,12 @@ const config: Config = {
         },
         accent: {
           DEFAULT: "hsl(var(--clr-accent))",
+        },
+        project: {
+          DEFAULT: "hsla(var(--project-1-op) / 0.1)",
+          one: "hsla(var(--project-2-op) / 0.1)",
+          two: "hsla(var(--project-3-op) / 0.1)",
+          three: "hsla(var(--project-4-op) / 0.1)",
         },
       },
     },

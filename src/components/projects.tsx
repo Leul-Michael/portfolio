@@ -1,18 +1,29 @@
 "use client"
 
-import Wrapper from "./wrapper"
-import ProjectExcerpt from "./project-excerpt"
 import { useProjectBg } from "@/lib/zustand"
 import { cn } from "@/lib/utils"
-import Button from "./button"
+import { useEffect, useState } from "react"
+
 import projects from "@/lib/project.json"
+
+import Wrapper from "./wrapper"
+import Button from "./button"
+import ProjectExcerpt from "./project-excerpt"
 
 const Projects = () => {
   const projectBg = useProjectBg()
+  const [bg, setBg] = useState(projectBg)
+
+  useEffect(() => {
+    setBg(projectBg)
+  }, [projectBg])
 
   return (
     <section
-      className={cn("projects flex flex-col py-20 w-full h-full", projectBg)}
+      className={cn(
+        "projects flex flex-col py-20 w-full h-full bg-background",
+        bg
+      )}
     >
       <Wrapper className="flex flex-col gap-16">
         <h1 className="text-2xl font-bold py-2">Projects</h1>

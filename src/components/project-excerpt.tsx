@@ -48,12 +48,12 @@ const ProjectExcerpt = ({ project }: ProjectExcerptProps) => {
           : "scale-[.98]"
       )}
     >
-      <div className="project-image relative flex w-full rounded-xl overflow-hidden max-h-[400px] h-[80vh] md:max-h-[600px]">
+      <div className="project-image relative flex w-full rounded-xl overflow-hidden max-h-[400px] h-[70vh] md:max-h-[600px]">
         <Image
           src={project.imgPath}
           alt="project image"
           fill
-          sizes="100vw"
+          sizes="(max-width: 0px) 100vw"
           className="object-cover"
         />
       </div>
