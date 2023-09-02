@@ -27,7 +27,7 @@ const Projects = () => {
     >
       <Wrapper className="flex flex-col gap-16">
         <h1 className="text-2xl font-bold py-2">Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-layout-400 gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           {projects.projects.slice(0, 4).map((project) => (
             <ProjectExcerpt key={project.slug} project={project} />
           ))}
