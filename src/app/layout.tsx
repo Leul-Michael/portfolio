@@ -2,6 +2,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Darker_Grotesque } from "next/font/google"
 import { ScrollProvider } from "@/context/ScrollProvider"
+import Header from "@/components/header"
 
 const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={darkerGrotesque.className}>
         <ScrollProvider>
+          <Header />
           <main className="flex min-h-screen flex-col h-full w-full">
             {children}
           </main>
