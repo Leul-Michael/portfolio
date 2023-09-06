@@ -88,7 +88,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: calc(100% + 50px);
+  height: calc(100% + 300px);
 }
 
 .phrase-txt p {
