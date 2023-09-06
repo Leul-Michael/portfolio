@@ -1,6 +1,8 @@
 import { create } from "zustand"
 
 type StoreProps = {
+  showMenu: boolean
+  setShowMenu: (input: boolean) => void
   hoverdId: string
   setHoverdId: (input: string) => void
   hoverdBlogId: string
@@ -10,6 +12,8 @@ type StoreProps = {
 }
 
 const useStoryStore = create<StoreProps>((set) => ({
+  showMenu: false,
+  setShowMenu: (input) => set(() => ({ showMenu: input })),
   hoverdId: "",
   setHoverdId: (input) => set(() => ({ hoverdId: input })),
   hoverdBlogId: "",
@@ -18,6 +22,8 @@ const useStoryStore = create<StoreProps>((set) => ({
   setProjectBg: (input) => set(() => ({ projectBg: input })),
 }))
 
+export const useShowMenu = () => useStoryStore((state) => state.showMenu)
+export const useSetShowMenu = () => useStoryStore((state) => state.setShowMenu)
 export const useHoverdId = () => useStoryStore((state) => state.hoverdId)
 export const useSetHoverdId = () => useStoryStore((state) => state.setHoverdId)
 export const useHoverdBlogId = () =>

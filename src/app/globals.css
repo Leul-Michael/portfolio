@@ -33,6 +33,56 @@ body {
   background: hsl(var(--background));
 }
 
+/* Header styles */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  gap: .25rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.menu-icon.show {
+  gap: 0;
+}
+
+.menu-icon span {
+  display: inline-block;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 20px;
+  height: 2px;
+  transition: transform .3s var(--transition);
+  transform-origin: center center;
+}
+
+.menu-icon span:first-child {
+  transform: translateY(-4px);
+}
+
+.menu-icon span:last-child {
+  transform: translateY(4px);
+}
+
+.menu-icon:hover span:first-child {
+  transform: translateY(0px);
+}
+
+.menu-icon:hover span:last-child {
+  transform: translateY(0px);
+}
+
+.menu-icon.show span:first-child {
+  transform: rotate(45deg) translateX(2px);
+}
+
+.menu-icon.show span:last-child {
+  transform: rotate(-45deg);
+}
+
 /* Page Loader */
 .loader-svg {
   position: absolute;

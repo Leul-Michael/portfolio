@@ -2,6 +2,16 @@
     "projects": [
 
       {
+        "slug": "ryte",
+        "imgPath": "/images/ryte.jpg",
+        "title": "Ryte Story",
+        "state":
+          "Website — Full-stack — Front-End — Tittap - Markdown - Unsplahs — Next js — Prisma - PostgreSql — Animation — Modern",
+        "desc": "Ryte is a fullstack story site, Discover stories, thinking, and expertise from writers on any topic.",
+        "url": "https://ryte-story.vercel.app/",
+        "color": "bg-project"
+      },
+      {
         "slug": "remotehive",
         "imgPath": "/images/stem.jpg",
         "title": "RemoteHIve",
