@@ -19,7 +19,7 @@ const Footer = () => {
         >
           <Button
             name="leulmic18@gmail.com"
-            className="secondary border-2 text-primary-dark border-primary-dark px-6 py-2 self-start text-xl capitalize font-bold rounded-full"
+            className="secondary border-2 text-primary-dark border-primary-dark px-6 py-2 self-start text-xl lowercase font-bold rounded-full"
           />
         </Link>
 
