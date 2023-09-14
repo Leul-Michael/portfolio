@@ -33,6 +33,30 @@ body {
   background: hsl(var(--background));
 }
 
+/* Project Background colors */
+.bg-project {
+  background: hsla(var(--project-1-op) / 0.1);
+}
+
+.bg-project-one {
+  background: hsla(var(--project-2-op) / 0.1);
+
+}
+
+.bg-project-two {
+  background: hsla(var(--project-3-op) / 0.1);
+
+}
+
+.bg-project-three {
+  background: hsla(var(--project-4-op) / 0.1);
+}
+
+/* Projects section hover action transition duration */
+.hero-wrapper {
+  transition: background 0.35s var(--transition);
+}
+
 /* Header styles */
 .menu-icon {
   display: flex;
@@ -149,10 +173,6 @@ body {
   top: 0;
 }
 
-.projects {
-  transition: background 0.35s var(--transition);
-}
-
 .project,
 .project img,
 .blog {
@@ -174,6 +194,7 @@ body {
 .blog-img-slider {
   transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
+
 
 @media (max-width: 968px) {
   .phrase-txt p {

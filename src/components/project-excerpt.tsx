@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils"
 import { useHoverdId, useSetHoverdId, useSetProjectBg } from "@/lib/zustand"
 import Image from "next/image"
 import Link from "next/link"
+import { MouseEventHandler } from "react"
 
 type Project = {
   slug: string
@@ -22,12 +23,14 @@ const ProjectExcerpt = ({ project }: ProjectExcerptProps) => {
   const setHoverId = useSetHoverdId()
   const setProjectBg = useSetProjectBg()
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter: MouseEventHandler<HTMLAnchorElement> = (e) => {
+    e.preventDefault()
     setProjectBg(project.color)
     setHoverId(project.slug)
   }
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave: MouseEventHandler<HTMLAnchorElement> = (e) => {
+    e.preventDefault()
     setProjectBg("bg-background")
     setHoverId("")
   }

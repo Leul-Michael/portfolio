@@ -19,7 +19,7 @@
           "Website — Full-stack — Front-End — Direct Messaging - React — Next js — Prisma - PostgreSql - Pusher — Animation — Modern",
         "desc": "RemoteHive is an American worldwide employment website for job listings launched in November 2023.",
         "url": "https://remotehive.io",
-        "color": "bg-project"
+        "color": "bg-project-one"
       },
       {
         "slug": "pixie",
@@ -30,7 +30,7 @@
         "desc": "A portfolio for PixieAutumn, who is An Irish - American Director of Photography based in LA.",
         "url": "https://pixie-studios.netlify.app/",
         "github": "https://github.com/Leul-Michael/tuttor",
-        "color": "bg-project-one"
+        "color": "bg-project-two"
       },
       {
         "slug": "tuttor",
@@ -41,7 +41,7 @@
         "desc": "A website built using Typescript in Next js where users can find Tutors for their needs and for tutors find the job that fits their need.",
         "url": "https://tuttor.vercel.app/",
         "github": "https://github.com/Leul-Michael/tuttor",
-        "color": "bg-project-two"
+        "color": "bg-project-three"
       },
       {
         "slug": "dallol",
