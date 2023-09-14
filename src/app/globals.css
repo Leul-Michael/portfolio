@@ -8,6 +8,7 @@
 
   --primary: 0 0% 96%;
   --primary-muted: 0 0% 94%;
+  --primary-dark: 0 0% 8%;
 
   --border: 217.2 32.6% 15%;
 
@@ -31,6 +32,7 @@
 body {
   color: hsl(var(--primary));
   background: hsl(var(--background));
+  overflow-x: hidden;
 }
 
 /* Project Background colors */
@@ -168,6 +170,11 @@ body {
   border-radius: 100vw;
 }
 
+.btn.secondary::before {
+  background-color: hsl(var(--background));
+  color: hsl(var(--primary));
+}
+
 .btn:hover::before,
 .btn.hovered::before {
   top: 0;
@@ -195,6 +202,22 @@ body {
   transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
+.blogs-overlay {
+  background-color: hsl(var(--background));
+  position: relative;
+  margin-top: 100px;
+}
+
+.blogs-overlay-circle {
+  height: 1550%;
+  width: 120%;
+  left: -10%;
+  border-radius: 0 0 50% 50%;
+  background-color: hsl(var(--background));
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.248);
+}
 
 @media (max-width: 968px) {
   .phrase-txt p {

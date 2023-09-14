@@ -27,6 +27,7 @@ const config: Config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           muted: "hsl(var(--primary-muted))",
+          dark: "hsl(var(--primary-dark))",
         },
         accent: {
           DEFAULT: "hsl(var(--clr-accent))",

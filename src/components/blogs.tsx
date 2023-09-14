@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import gsap from "gsap"
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
@@ -30,6 +30,13 @@ const Blogs = () => {
   const [modal, setModal] = useState({ active: false, index: 0 })
   const { active, index } = modal
   const modalContainer = useRef(null)
+  const container = useRef<HTMLElement | null>(null)
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  })
+
+  const height = useTransform(scrollYProgress, [0, 0.9], [80, 0])
 
   let xMoveContainer = useRef<gsap.QuickToFunc | null>(null)
   let yMoveContainer = useRef<gsap.QuickToFunc | null>(null)
@@ -62,7 +69,10 @@ const Blogs = () => {
   }
 
   return (
-    <section className="flex flex-col py-20 w-full h-full">
+    <section
+      ref={container}
+      className="relative flex flex-col py-20 w-full h-full"
+    >
       <Wrapper
         onMouseMove={(e) => {
           moveItems(e.clientX, e.clientY)
@@ -114,6 +124,9 @@ const Blogs = () => {
             )
           })}
         </div>
+      </motion.div>
+      <motion.div style={{ height }} className="blogs-overlay">
+        <div className="blogs-overlay-circle"></div>
       </motion.div>
     </section>
   )

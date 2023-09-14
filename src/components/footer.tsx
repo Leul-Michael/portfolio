@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col pt-40 pb-12">
+    <footer className="flex flex-col pt-40 pb-12 bg-accent/80 text-primary-dark">
       <Wrapper className="flex flex-col gap-8">
         <h1 className="text-[2.5rem] font-semibold leading-[0.8]">
           Let&apos;s talk about your next project.
@@ -15,17 +15,18 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           href="mailto:leulmic18@gmail.com"
+          className="self-start"
         >
           <Button
             name="leulmic18@gmail.com"
-            className="text-accent/90 border-accent/90 px-6 py-2 self-start text-xl capitalize font-semibold rounded-full"
+            className="secondary text-primary-dark border-primary-dark px-6 py-2 self-start text-xl capitalize font-bold rounded-full"
           />
         </Link>
 
         <hr className="h-0 w-full mt-8 border-0" />
-        <SvgCurve />
+        <SvgCurve light />
         <div className="flex items-center justify-between gap-8 flex-wrap">
-          <p className="text-[1.5rem] font-semibold leading-[0.8] text-primary-muted/60">
+          <p className="text-[1.5rem] font-bold leading-[0.8] text-primary-dark/80">
             Leul Michael © 2023
           </p>
 
@@ -33,7 +34,7 @@ const Footer = () => {
             <Link target="_blank" rel="noreferrer" href="https://t.me/l_webdev">
               <Button
                 name="Telegram"
-                className="text-primary-muted px-4 py-1 self-start text-sm capitalize font-semibold rounded-full"
+                className="secondary text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
               />
             </Link>
 
@@ -44,7 +45,7 @@ const Footer = () => {
             >
               <Button
                 name="Github"
-                className="text-primary-muted px-4 py-1 self-start text-sm capitalize font-semibold rounded-full"
+                className="secondary text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
               />
             </Link>
             <Link
@@ -54,7 +55,7 @@ const Footer = () => {
             >
               <Button
                 name="Linkedin"
-                className="text-primary-muted px-4 py-1 self-start text-sm capitalize font-semibold rounded-full"
+                className="secondary text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
               />
             </Link>
           </div>

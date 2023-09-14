@@ -1,8 +1,9 @@
 "use client"
 
+import { cn } from "@/lib/utils"
 import { MouseEventHandler, useCallback, useEffect, useRef } from "react"
 
-const SvgCurve = () => {
+const SvgCurve = ({ light }: { light?: boolean }) => {
   const containter = useRef<HTMLDivElement | null>(null)
   const path = useRef<SVGPathElement | null>(null)
   let progress = 0
@@ -86,7 +87,10 @@ const SvgCurve = () => {
       ></span>
       <svg className="absolute w-full h-[100px] min-w-full -top-[50px] left-0">
         <path
-          className="stroke-1 stroke-primary h-full w-full"
+          className={cn(
+            "stroke-1 h-full w-full fill-transparent",
+            light ? "stroke-primary-dark" : "stroke-primary"
+          )}
           ref={path}
         ></path>
       </svg>
