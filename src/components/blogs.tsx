@@ -36,7 +36,7 @@ const Blogs = () => {
     offset: ["start end", "end start"],
   })
 
-  const height = useTransform(scrollYProgress, [0, 0.9], [100, 0])
+  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
 
   let xMoveContainer = useRef<gsap.QuickToFunc | null>(null)
   let yMoveContainer = useRef<gsap.QuickToFunc | null>(null)
@@ -71,7 +71,7 @@ const Blogs = () => {
   return (
     <section
       ref={container}
-      className="relative flex flex-col py-20 w-full h-full"
+      className="relative flex flex-col py-20 w-full h-full z-[2] bg-background"
     >
       <Wrapper
         onMouseMove={(e) => {
