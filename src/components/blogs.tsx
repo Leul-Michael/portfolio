@@ -36,7 +36,7 @@ const Blogs = () => {
     offset: ["start end", "end start"],
   })
 
-  const height = useTransform(scrollYProgress, [0, 0.9], [80, 0])
+  const height = useTransform(scrollYProgress, [0, 0.9], [100, 0])
 
   let xMoveContainer = useRef<gsap.QuickToFunc | null>(null)
   let yMoveContainer = useRef<gsap.QuickToFunc | null>(null)
