@@ -19,7 +19,7 @@ const Footer = () => {
         >
           <Button
             name="leulmic18@gmail.com"
-            className="secondary text-primary-dark border-primary-dark px-6 py-2 self-start text-xl capitalize font-bold rounded-full"
+            className="secondary border-2 text-primary-dark border-primary-dark px-6 py-2 self-start text-xl capitalize font-bold rounded-full"
           />
         </Link>
 
@@ -34,7 +34,7 @@ const Footer = () => {
             <Link target="_blank" rel="noreferrer" href="https://t.me/l_webdev">
               <Button
                 name="Telegram"
-                className="secondary text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
+                className="secondary border-2 text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
               />
             </Link>
 
@@ -45,7 +45,7 @@ const Footer = () => {
             >
               <Button
                 name="Github"
-                className="secondary text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
+                className="secondary border-2 text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
               />
             </Link>
             <Link
@@ -55,7 +55,7 @@ const Footer = () => {
             >
               <Button
                 name="Linkedin"
-                className="secondary text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
+                className="secondary border-2 text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
               />
             </Link>
           </div>
