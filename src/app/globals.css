@@ -35,6 +35,15 @@ body {
   overflow-x: hidden;
 }
 
+/* Lenis scroll adjustments */
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
 /* Project Background colors */
 .bg-project {
   background: hsla(var(--project-1-op) / 0.1);
