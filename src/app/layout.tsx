@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={darkerGrotesque.className}>
         <ScrollProvider>
           <Header />
-          {/* <Menu /> */}
+          <Menu />
           <main className="flex min-h-screen flex-col h-full w-full">
             {children}
           </main>

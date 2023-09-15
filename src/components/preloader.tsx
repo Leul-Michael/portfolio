@@ -68,7 +68,7 @@ export default function PreaLoader() {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="fixed w-screen h-screen z-[99] flex items-center justify-center text-center bg-accent text-background"
+      className="fixed w-screen h-screen z-[110] flex items-center justify-center text-center bg-accent text-background"
     >
       {dimension.width > 0 && (
         <>
