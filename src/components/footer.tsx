@@ -18,10 +18,7 @@ const Footer = () => {
   const y = useTransform(
     scrollYProgress,
     [0, 1],
-    [
-      typeof window !== "undefined" && window?.innerWidth <= 600 ? -100 : -400,
-      0,
-    ]
+    [typeof window !== "undefined" && window?.innerWidth <= 600 ? 0 : -400, 0]
   )
 
   return (
