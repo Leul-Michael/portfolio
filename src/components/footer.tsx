@@ -15,7 +15,14 @@ const Footer = () => {
     offset: ["start end", "end end"],
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], [-400, 0])
+  const y = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [
+      typeof window !== "undefined" && window?.innerWidth <= 768 ? -200 : -400,
+      0,
+    ]
+  )
 
   return (
     <motion.footer
