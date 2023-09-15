@@ -125,9 +125,7 @@ const Blogs = () => {
           })}
         </div>
       </motion.div>
-      <motion.div style={{ height }} className="blogs-overlay">
-        <div className="blogs-overlay-circle"></div>
-      </motion.div>
+      <motion.div style={{ height }} className="blogs-overlay"></motion.div>
     </section>
   )
 }

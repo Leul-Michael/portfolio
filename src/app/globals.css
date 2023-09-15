@@ -28,6 +28,9 @@
   --transition: cubic-bezier(.5, .1, 0, 1);
 }
 
+html,
+body {}
+
 
 body {
   color: hsl(var(--primary));
@@ -217,7 +220,7 @@ body {
   margin-top: 100px;
 }
 
-.blogs-overlay-circle {
+/* .blogs-overlay-circle {
   height: 1550%;
   width: 120%;
   left: -10%;
@@ -225,8 +228,9 @@ body {
   background-color: hsl(var(--background));
   z-index: 1;
   position: absolute;
-  /* box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.248); */
-}
+  overflow-x: hidden;
+  /* box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.248); 
+}*/
 
 @media (max-width: 968px) {
   .phrase-txt p {
