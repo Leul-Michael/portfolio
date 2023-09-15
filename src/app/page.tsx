@@ -4,13 +4,11 @@ import Footer from "@/components/footer"
 import Hero from "@/components/hero"
 import Projects from "@/components/projects"
 import SlideImages from "@/components/slide-images"
-import PrealoadWrapper from "@/components/preaload-wrapper"
 import HeroWrapper from "@/components/hero-wrapper"
 
 export default function Home() {
   return (
     <HeroWrapper>
-      <PrealoadWrapper />
       <Hero />
       <AboutSection />
       <SlideImages />

@@ -4,6 +4,7 @@ import { Darker_Grotesque } from "next/font/google"
 import { ScrollProvider } from "@/context/ScrollProvider"
 import Header from "@/components/header"
 import MenuWrapper from "@/components/menu-wrapper"
+import PrealoadWrapper from "@/components/preaload-wrapper"
 
 const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={darkerGrotesque.className}>
         <ScrollProvider>
+          <PrealoadWrapper />
           <Header />
           <MenuWrapper />
           <main className="flex min-h-screen flex-col h-full w-full">

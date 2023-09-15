@@ -136,7 +136,7 @@ const Menu = () => {
               </motion.div>
             </Link>
             <Link
-              href="/"
+              href="/contact"
               className="flex self-start w-max overflow-hidden"
               onClick={() => {
                 setShowMenu(false)
