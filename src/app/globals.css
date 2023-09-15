@@ -28,10 +28,6 @@
   --transition: cubic-bezier(.5, .1, 0, 1);
 }
 
-html,
-body {}
-
-
 body {
   color: hsl(var(--primary));
   background: hsl(var(--background));
