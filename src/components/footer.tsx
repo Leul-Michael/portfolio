@@ -19,7 +19,7 @@ const Footer = () => {
     scrollYProgress,
     [0, 1],
     [
-      typeof window !== "undefined" && window?.innerWidth <= 768 ? -200 : -400,
+      typeof window !== "undefined" && window?.innerWidth <= 600 ? -100 : -400,
       0,
     ]
   )
