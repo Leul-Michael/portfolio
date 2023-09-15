@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils"
 import { useSetShowMenu, useShowMenu } from "@/lib/zustand"
 import { motion } from "framer-motion"
+import Magenet from "./magenet"
 
 const Header = () => {
   const showMenu = useShowMenu()
@@ -17,17 +18,19 @@ const Header = () => {
           </h1>
         </div>
       </header>
-      <motion.div
-        role="button"
-        className={cn(
-          `menu-icon z-[100] my-2 md:mr-16 mr-5`,
-          showMenu ? "show" : ""
-        )}
-        onClick={() => setShowMenu(!showMenu)}
-      >
-        <span></span>
-        <span></span>
-      </motion.div>
+      <Magenet>
+        <motion.div
+          role="button"
+          className={cn(
+            `menu-icon z-[100] my-2 md:mr-16 mr-5`,
+            showMenu ? "show" : ""
+          )}
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <span></span>
+          <span></span>
+        </motion.div>
+      </Magenet>
     </>
   )
 }

@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react"
 import PreaLoader from "./preloader"
-import { AnimatePresence } from "framer-motion"
 import imagesLoaded from "imagesloaded"
 import useScroll from "@/context/ScrollProvider"
+import AnimatePresenceWrapper from "./AnimatePresenceWrapper"
 
 const PrealoadWrapper = () => {
   const { lenis } = useScroll()
@@ -29,7 +29,9 @@ const PrealoadWrapper = () => {
   }, [lenis, isLoading])
 
   return (
-    <AnimatePresence mode="wait">{isLoading && <PreaLoader />}</AnimatePresence>
+    <AnimatePresenceWrapper>
+      {isLoading && <PreaLoader />}
+    </AnimatePresenceWrapper>
   )
 }
 
