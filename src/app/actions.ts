@@ -2,7 +2,7 @@
 
 import { Resend } from "resend"
 
-import ContactTemplate from "@/components/form/template/contact-template"
+import ContactTemplate from "@/components/template/contact-template"
 
 type FormDataProps = {
   name: string

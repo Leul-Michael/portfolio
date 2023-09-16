@@ -32,7 +32,9 @@ const SelectOption = ({
             key={option.id}
             className={cn(
               "cursor-pointer px-8 py-[0.6rem] flex items-center justify-center border rounded-full whitespace-nowrap",
-              isSelected(option) ? "border-primary/90" : "border-primary/40"
+              isSelected(option)
+                ? "border-primary/50 ring-offset-transparent ring-2 ring-offset-1 ring-border"
+                : "border-primary/40"
             )}
             onClick={() => onClick(option)}
           >
