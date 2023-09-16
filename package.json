@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.1",
     "@studio-freight/lenis": "^1.0.23",
     "@types/node": "20.5.6",
     "@types/react": "18.2.21",
@@ -20,10 +21,12 @@
     "framer-motion": "^10.16.1",
     "gsap": "^3.12.2",
     "imagesloaded": "^5.0.0",
-    "next": "13.4.19",
+    "next": "^13.4.19",
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.46.1",
+    "resend": "^1.0.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2",

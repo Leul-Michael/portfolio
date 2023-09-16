@@ -14,9 +14,21 @@ const darkerGrotesque = Darker_Grotesque({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://leul-michael.vercel.app"),
-  title: "Leul Michael - Welcome",
+  title: {
+    default: "Leul Michael - Welcome",
+    template: "%s | Leul Michael",
+  },
   description:
-    "full-stack software developer, who loves to create, modify, design, and develop websites. I design and develop digital solutions with attractive and well-coded interface which are perceived as easier to use and make users loyal.",
+    "Full-stack software developer, who loves to create, modify, design, and develop websites. I design and develop digital solutions with attractive and well-coded interface which are perceived as easier to use and make users loyal.",
+  openGraph: {
+    title: "Leul Michael",
+    description:
+      "Full-stack software developer, who loves to create, modify, design, and develop websites. I design and develop digital solutions with attractive and well-coded interface which are perceived as easier to use and make users loyal.",
+    url: "https://leul-michael.vercel.app",
+    siteName: "Leul Michael",
+    locale: "en_US",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
