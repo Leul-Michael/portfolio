@@ -45,6 +45,7 @@ const Form = () => {
 
   const onSubmit: SubmitHandler<ContactProps> = async (data) => {
     const { intersted_in, budget, ...rest } = data
+
     setShowModal(true)
     try {
       setSuccess(false)
