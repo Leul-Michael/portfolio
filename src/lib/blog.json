@@ -11,7 +11,7 @@
       },
       {
         "slug": 1,
-        "imgPath": "/images/officestudio.png",
+        "imgPath": "/images/pixie.jpg",
         "title": "Server-Side Session in Next.js v13 App Router",
         "desc": "Let's assume this scenario: you created a Next.js app using the new App router, and you need to store sensitive user session data like access token, refresh token, or maybe just form data that you want to access.",
         "color": "bg-project",
