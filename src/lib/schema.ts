@@ -32,8 +32,8 @@ export const contactSchema = z
   })
   .refine(
     (data) =>
-      (data.intersted_in.id !== 4 && data.details.length <= 0) ||
-      (data.intersted_in.id === 4 && data.details.length > 0),
+      (data.intersted_in.id !== 4 && data.details.length > 0) ||
+      data.intersted_in.id === 4,
     {
       message: "Please describe the project you're interseted in details.",
       path: ["details"],
