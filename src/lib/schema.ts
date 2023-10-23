@@ -2,7 +2,11 @@ import * as z from "zod"
 
 export const contactSchema = z
   .object({
-    name: z.string().nonempty("Your name is required."),
+    name: z
+      .string({
+        required_error: "Your name is required.",
+      })
+      .min(1, "Your name is required."),
     email: z
       .string({
         required_error: "Your Email is required.",
