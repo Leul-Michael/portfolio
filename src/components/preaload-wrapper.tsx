@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import PreaLoader from "./preloader"
-import imagesLoaded from "imagesloaded"
+// import imagesLoaded from "imagesloaded"
 import useScroll from "@/context/ScrollProvider"
 import AnimatePresenceWrapper from "./AnimatePresenceWrapper"
 import { usePathname } from "next/navigation"
@@ -14,13 +14,13 @@ const PrealoadWrapper = () => {
 
   useEffect(() => {
     if (pathname !== "/") return
-    imagesLoaded(document.querySelector("#hero")!, function () {
-      setTimeout(() => {
-        setIsLoading(false)
-        //   document.body.style.cursor = 'default'
-        window.scrollTo(0, 0)
-      }, 2000)
-    })
+    // imagesLoaded(document.querySelector("#hero")!, function () {
+    setTimeout(() => {
+      setIsLoading(false)
+      //   document.body.style.cursor = 'default'
+      window.scrollTo(0, 0)
+    }, 2000)
+    // })
   }, [pathname])
 
   useEffect(() => {
