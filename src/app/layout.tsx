@@ -17,7 +17,7 @@ const darkerGrotesque = Darker_Grotesque({
 export const metadata: Metadata = {
   metadataBase: new URL("https://leul-michael.vercel.app/"),
   title: {
-    default: "Leul Michael - Welcome",
+    default: "Leul Michael",
     template: "%s | Leul Michael",
   },
   description:
