@@ -1,10 +1,10 @@
-import AboutSection from "@/components/about-section"
-import Blogs from "@/components/blogs"
+import AboutSection from "./about-section"
+import Blogs from "./blogs"
+import Hero from "./hero"
+import Projects from "./projects"
+import HeroWrapper from "./hero-wrapper"
 import Footer from "@/components/footer"
-import Hero from "@/components/hero"
-import Projects from "@/components/projects"
 import SlideImages from "@/components/slide-images"
-import HeroWrapper from "@/components/hero-wrapper"
 
 export default function Home() {
   return (

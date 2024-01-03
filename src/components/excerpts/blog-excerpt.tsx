@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils"
 import { useHoverdBlogId, useSetHoverdBlogId } from "@/lib/zustand"
-import React from "react"
 
 type Blog = {
   slug: number

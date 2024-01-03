@@ -5,7 +5,7 @@ import { useSetShowMenu, useShowMenu } from "@/lib/zustand"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 
-import Wrapper from "./wrapper"
+import Wrapper from "../wrapper"
 import Link from "next/link"
 
 const menuSlide = {

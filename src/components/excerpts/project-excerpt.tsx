@@ -1,7 +1,9 @@
-import { cn } from "@/lib/utils"
-import { useHoverdId, useSetHoverdId, useSetProjectBg } from "@/lib/zustand"
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { cn } from "@/lib/utils"
+import { useHoverdId, useSetHoverdId, useSetProjectBg } from "@/lib/zustand"
 import { MouseEventHandler } from "react"
 
 type Project = {

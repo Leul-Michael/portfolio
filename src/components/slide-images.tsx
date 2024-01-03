@@ -1,8 +1,8 @@
 "use client"
 
+import Image from "next/image"
 import { useRef } from "react"
 import { useScroll, useTransform, motion } from "framer-motion"
-import Image from "next/image"
 
 const slider1 = [
   {
@@ -72,7 +72,7 @@ const SlideImages = () => {
                 <Image
                   fill
                   sizes="(max-width: 0px) 100vw"
-                  alt={"image"}
+                  alt={`image ${index}`}
                   src={`/images/${project.src}`}
                   className="object-cover"
                 />

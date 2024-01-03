@@ -1,5 +1,3 @@
-"use client"
-
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
@@ -31,6 +29,13 @@ export default function PreaLoader() {
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight })
+    window.scrollTo(0, 0)
+        document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.body.style.overflow = 'auto'
+    }
+
   }, [])
 
   useEffect(() => {

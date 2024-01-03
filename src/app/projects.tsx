@@ -1,10 +1,7 @@
-"use client"
-
 import projects from "@/lib/project.json"
-
-import Wrapper from "./wrapper"
-import Button from "./button"
-import ProjectExcerpt from "./project-excerpt"
+import Wrapper from "@/components/wrapper"
+import Button from "@/components/button"
+import ProjectExcerpt from "@/components/excerpts/project-excerpt"
 
 const Projects = () => {
   return (

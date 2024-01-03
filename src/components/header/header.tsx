@@ -5,7 +5,7 @@ import { useSetShowMenu, useShowMenu } from "@/lib/zustand"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
-import Magenet from "./magenet"
+import Magenet from "../magenet"
 
 const Header = () => {
   const showMenu = useShowMenu()

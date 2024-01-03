@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 import useScroll from "@/context/ScrollProvider"
 import { Close, MailCheck, MailX } from "../svgs"
-import AnimatePresenceWrapper from "@/components/AnimatePresenceWrapper"
+import AnimatePresenceWrapper from "@/components/animate-presence-wrapper"
 
 type ResponseModalProps = {
   show: boolean

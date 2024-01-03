@@ -10,9 +10,9 @@ import {
 } from "react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import gsap from "gsap"
-import Wrapper from "./wrapper"
-import SvgCurve from "./svg-curve"
-import Button from "./button"
+import Wrapper from "@/components/wrapper"
+import SvgCurve from "@/components/svg-curve"
+import Button from "@/components/button"
 
 const phrase =
   "I am Leul michael, a full-stack software developer, who loves to create, modify, design, and develop websites. I design and develop digital solutions with attractive and well-coded interface which are perceived as easier to use and make users loyal."

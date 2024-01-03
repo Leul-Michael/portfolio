@@ -1,7 +1,8 @@
 "use client"
 
 import { useShowMenu } from "@/lib/zustand"
-import AnimatePresenceWrapper from "./AnimatePresenceWrapper"
+
+import AnimatePresenceWrapper from "@/components/animate-presence-wrapper"
 import Menu from "./menu"
 
 const MenuWrapper = () => {

@@ -1,16 +1,16 @@
 "use client"
 
-import { motion, useScroll, useTransform } from "framer-motion"
 import gsap from "gsap"
 import Image from "next/image"
+import blogs from "@/lib/blog.json"
+import { motion, useScroll, useTransform } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import { cn } from "@/lib/utils"
-
-import Wrapper from "./wrapper"
-import Button from "./button"
-import BlogExcerpt from "./blog-excerpt"
-import blogs from "@/lib/blog.json"
 import { useProjectBg } from "@/lib/zustand"
+
+import Wrapper from "@/components/wrapper"
+import Button from "@/components/button"
+import BlogExcerpt from "@/components/excerpts/blog-excerpt"
 
 const scaleAnimation = {
   initial: { scale: 0, x: "-50%", y: "-50%" },

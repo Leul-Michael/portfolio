@@ -2,9 +2,11 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Darker_Grotesque } from "next/font/google"
 import { ScrollProvider } from "@/context/ScrollProvider"
-import Header from "@/components/header"
-import MenuWrapper from "@/components/menu-wrapper"
-import PrealoadWrapper from "@/components/preaload-wrapper"
+import GoogleAnalytics from "@bradgarropy/next-google-analytics"
+
+import Header from "@/components/header/header"
+import MenuWrapper from "@/components/header/menu-wrapper"
+import PrealoadWrapper from "@/app/preaload-wrapper"
 
 const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin"],
@@ -29,6 +31,24 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "Leul Michael",
+    card: "summary_large_image",
+  },
+  verification: {
+    google: "_BzowsjaZDmPjXqlfa5s5p5QaApNryfM4vkQZUwQjdg",
+  },
 }
 
 export default function RootLayout({
@@ -38,6 +58,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="_BzowsjaZDmPjXqlfa5s5p5QaApNryfM4vkQZUwQjdg"
+      />
       <body className={darkerGrotesque.className}>
         <ScrollProvider>
           <PrealoadWrapper />
@@ -47,6 +71,7 @@ export default function RootLayout({
             {children}
           </main>
         </ScrollProvider>
+        <GoogleAnalytics measurementId="G-CBCVL02J6P" />
       </body>
     </html>
   )

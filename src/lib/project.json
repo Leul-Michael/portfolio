@@ -2,23 +2,23 @@
     "projects": [
 
       {
-        "slug": "remotehive",
+        "slug": "cypo",
+        "imgPath": "/images/cypo-shop.jpg",
+        "title": "Cyop Shop",
+        "state":
+          "Website — Full-stack — Animation — Next js — Modern - Translation - Ecommerce - Paymnet Integration.",
+        "desc": "Cypo is a Fortnite shop with discount up to 60% on prices. Shop at Cypo and maximize your gameplay without maximizing your expenses.",
+        "url": "https://cypo.shop/",
+        "color": "bg-project"
+      },
+      {
+        "slug": "talnethub",
         "imgPath": "/images/stem.jpg",
         "title": "TalentHub Ethiopia",
         "state":
           "Website — Full-stack — Front-End — Direct Messaging - React — Next js — Prisma - PostgreSql - Pusher — Animation — Modern",
         "desc": "TalentHub is the premier ethiopian job board for work opportunities. Our mission is to connect talented professionals with top-notch employers who are looking for professional jobs.",
         "url": "https://talenthub.et/",
-        "color": "bg-project"
-      },
-      {
-        "slug": "ryte",
-        "imgPath": "/images/ryte.jpg",
-        "title": "Ryte Story",
-        "state":
-          "Website — Full-stack — Front-End — Tittap - Markdown - Unsplahs — Next js — Prisma - PostgreSql — Animation — Modern",
-        "desc": "Ryte is a fullstack story site, Discover stories, thinking, and expertise from writers on any topic.",
-        "url": "https://ryte-story.vercel.app/",
         "color": "bg-project-one"
       },
       {
