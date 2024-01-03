@@ -8,11 +8,11 @@ export default async function sitemap(): Promise<
 > {
   return [
     {
-      url: "https://leul-michael.vercel.app/",
+      url: "https://leul-michael.vercel.app",
       priority: 1,
     },
     {
-      url: "https://leul-michael.vercel.app/",
+      url: "https://leul-michael.vercel.app/contact",
       priority: 1,
     },
   ]
