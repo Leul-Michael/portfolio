@@ -1,9 +1,7 @@
 "use client"
 
-import { cn } from "@/lib/utils"
-import { useSetShowMenu, useShowMenu } from "@/lib/zustand"
+import { useSetShowMenu } from "@/lib/zustand"
 import { motion } from "framer-motion"
-import { useRouter } from "next/navigation"
 
 import Wrapper from "../wrapper"
 import Link from "next/link"
@@ -30,7 +28,6 @@ const link = {
 }
 
 const Menu = () => {
-  const router = useRouter()
   const setShowMenu = useSetShowMenu()
 
   return (
