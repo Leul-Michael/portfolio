@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 import { useHoverdId, useSetHoverdId, useSetProjectBg } from "@/lib/zustand"
 import { MouseEventHandler } from "react"
 
-type Project = {
+type Work = {
   slug: string
   imgPath: string
   title: string
@@ -17,10 +17,10 @@ type Project = {
 }
 
 type ProjectExcerptProps = {
-  project: Project
+  project: Work
 }
 
-const ProjectExcerpt = ({ project }: ProjectExcerptProps) => {
+const WorkExcerpt = ({ project }: ProjectExcerptProps) => {
   const hoverId = useHoverdId()
   const setHoverId = useSetHoverdId()
   const setProjectBg = useSetProjectBg()
@@ -70,4 +70,4 @@ const ProjectExcerpt = ({ project }: ProjectExcerptProps) => {
   )
 }
 
-export default ProjectExcerpt
+export default WorkExcerpt

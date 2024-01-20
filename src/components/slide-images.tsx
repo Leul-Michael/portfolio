@@ -7,26 +7,26 @@ import { useScroll, useTransform, motion } from "framer-motion"
 const slider1 = [
   {
     color: "#e3e5e7",
-    src: "c2.jpg",
+    src: "cypo-shop.jpg",
   },
   {
     color: "#d6d7dc",
-    src: "decimal.jpg",
+    src: "pixie.jpg",
   },
   {
     color: "#e3e3e3",
-    src: "c2.png",
+    src: "ryte.jpg",
   },
   {
     color: "#21242b",
-    src: "google.jpg",
+    src: "tuttor.jpg",
   },
 ]
 
 const slider2 = [
   {
     color: "#d4e3ec",
-    src: "maven.jpg",
+    src: "tasks.jpg",
   },
   {
     color: "#e5e0e1",
@@ -34,7 +34,7 @@ const slider2 = [
   },
   {
     color: "#d7d4cf",
-    src: "mobile.jpg",
+    src: "funny.jpg",
   },
   {
     color: "#e1dad6",

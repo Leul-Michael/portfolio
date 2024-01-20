@@ -3,7 +3,7 @@
 
       {
         "slug": 0,
-        "imgPath": "/images/c2montreal.png",
+        "imgPath": "/images/stem.jpg",
         "title": "10 Ways To Improve Your Next.js App Performance",
         "desc": "With this article, I will share some practices you can use to improve your app performance and architecture. Next.js makes it easier for developers to create and build a web application in very few steps.",
         "color": "bg-project",
@@ -19,7 +19,7 @@
       },
       {
         "slug": 2,
-        "imgPath": "/images/locomotive.avif",
+        "imgPath": "/images/social.jpg",
         "title": "Do brands should enter the Metaverse?",
         "desc": "I've been invited by the French media La Réclame to talk about the Metaverse and why brands should enter this new world.",
         "color": "bg-project",

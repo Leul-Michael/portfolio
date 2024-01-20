@@ -1,9 +1,8 @@
 import AboutSection from "./about-section"
 import Blogs from "./blogs"
 import Hero from "./hero"
-import Projects from "./projects"
+import Works from "./works"
 import HeroWrapper from "./hero-wrapper"
-import Footer from "@/components/footer"
 import SlideImages from "@/components/slide-images"
 
 export default function Home() {
@@ -12,9 +11,8 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <SlideImages />
-      <Projects />
+      <Works />
       <Blogs />
-      <Footer />
     </HeroWrapper>
   )
 }

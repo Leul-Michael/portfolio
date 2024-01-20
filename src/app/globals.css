@@ -19,13 +19,21 @@
   --clr-orange: #ec532d;
   --clr-purple: #6460d8;
 
-  --project-1-op: 242 61% 61%;
-  --project-2-op: 141 65% 29%;
-  --project-3-op: 108 100% 65%;
-  --project-4-op: 12 83% 70%;
+  --project-one: 245 42% 6%;
+  --project-two: 141 65% 29%;
+  --project-three: 110 53% 7%;
+  --project-four: 14 37% 7%;
+  --project-five: 193 60% 6%;
+  --project-six: 212 45% 16%;
 
 
   --transition: cubic-bezier(.5, .1, 0, 1);
+}
+
+@layer components {
+  .custom-transition {
+    transition-timing-function: var(--transition);
+  }
 }
 
 body {
@@ -77,23 +85,31 @@ body {
 }
 
 
-/* Project Background colors */
+/* Project Background colors  */
 .bg-project {
-  background: hsla(var(--project-1-op) / 0.1);
+  background: hsl(var(--project-one));
 }
 
 .bg-project-one {
-  background: hsla(var(--project-2-op) / 0.1);
+  background: hsla(var(--project-two) / 0.1);
 
 }
 
 .bg-project-two {
-  background: hsla(var(--project-3-op) / 0.1);
+  background: hsl(var(--project-three));
 
 }
 
 .bg-project-three {
-  background: hsla(var(--project-4-op) / 0.1);
+  background: hsl(var(--project-four));
+}
+
+.bg-project-four {
+  background: hsl(var(--project-five));
+}
+
+.bg-project-five {
+  background: hsl(var(--project-six));
 }
 
 /* Projects section hover action transition duration */

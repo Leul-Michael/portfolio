@@ -7,6 +7,7 @@ import GoogleAnalytics from "@bradgarropy/next-google-analytics"
 import Header from "@/components/header/header"
 import MenuWrapper from "@/components/header/menu-wrapper"
 import PrealoadWrapper from "@/app/preaload-wrapper"
+import Footer from "@/components/footer"
 
 const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin"],
@@ -70,6 +71,7 @@ export default function RootLayout({
           <main className="flex min-h-screen flex-col h-full w-full">
             {children}
           </main>
+          <Footer />
         </ScrollProvider>
         <GoogleAnalytics measurementId="G-CBCVL02J6P" />
       </body>

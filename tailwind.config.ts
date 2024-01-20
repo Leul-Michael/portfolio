@@ -32,12 +32,6 @@ const config: Config = {
         accent: {
           DEFAULT: "hsl(var(--clr-accent))",
         },
-        project: {
-          DEFAULT: "hsla(var(--project-1-op) / 0.1)",
-          one: "hsla(var(--project-2-op) / 0.1)",
-          two: "hsla(var(--project-3-op) / 0.1)",
-          three: "hsla(var(--project-4-op) / 0.1)",
-        },
       },
     },
   },

@@ -20,7 +20,7 @@ const useStoryStore = create<StoreProps>((set) => ({
   setHoverdId: (input) => set(() => ({ hoverdId: input })),
   hoverdBlogId: "",
   setHoverdBlogId: (input) => set(() => ({ hoverdBlogId: input })),
-  projectBg: "bg-background",
+  projectBg: "",
   setProjectBg: (input) => set(() => ({ projectBg: input })),
 }))
 

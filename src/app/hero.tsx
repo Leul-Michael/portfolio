@@ -19,7 +19,7 @@ const Hero = () => {
           <h1 className="2xl:text-[8vw] lg:text-[8rem] md:text-[6rem] sm:text-[4.5rem] text-[4rem] font-bold leading-[0.7]">
             Minimalist
           </h1>
-          <h1 className=" ml-3 sm:ml-6 md:ml-12 2xl:text-[8vw] lg:text-[8rem] md:text-[6rem] sm:text-[4.5rem] text-[4rem] font-bold leading-[0.7]">
+          <h1 className="ml-3 sm:ml-6 md:ml-12 2xl:text-[8vw] lg:text-[8rem] md:text-[6rem] sm:text-[4.5rem] text-[4rem] font-bold leading-[0.7]">
             & Creative
           </h1>
           <h1 className="2xl:text-[2vw] text-[1.8rem] font-semibold leading-[1.1] text-primary-muted self-end">
