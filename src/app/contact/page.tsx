@@ -2,7 +2,6 @@ import { Metadata } from "next"
 import dynamic from "next/dynamic"
 
 import Wrapper from "@/components/wrapper"
-import Footer from "@/components/footer"
 import FormLoader from "./form-loader"
 
 const Form = dynamic(() => import("./form"), {
