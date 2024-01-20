@@ -12,6 +12,10 @@ export default async function sitemap(): Promise<
       priority: 1,
     },
     {
+      url: "https://leul-michael.vercel.app/works",
+      priority: 1,
+    },
+    {
       url: "https://leul-michael.vercel.app/contact",
       priority: 1,
     },

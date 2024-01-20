@@ -11,7 +11,6 @@ const Form = dynamic(() => import("./form"), {
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://leul-michael.vercel.app"),
   title: "Contact",
   description: "Contact me by providing the required info using the from.",
 }

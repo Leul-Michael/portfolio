@@ -1,7 +1,14 @@
+import { Metadata } from "next"
 import works from "@/lib/works.json"
+
 import Wrapper from "@/components/wrapper"
 import WorkExcerpt from "@/components/excerpts/work-excerpt"
 import HeroWrapper from "../hero-wrapper"
+
+export const metadata: Metadata = {
+  title: "Works",
+  description: "Wanna know what's in my verse? checkout my recent works.",
+}
 
 export default function Works() {
   return (
