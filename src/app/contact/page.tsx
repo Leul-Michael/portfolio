@@ -35,7 +35,6 @@ export default function Contact() {
           <Form />
         </Wrapper>
       </section>
-      <Footer />
     </>
   )
 }
