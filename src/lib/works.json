@@ -1,13 +1,13 @@
 {
     "works": [
       {
-        "slug": "tasks",
+        "slug": "mesobinsights",
         "imgPath": "/images/tasks.jpg",
-        "title": "Task-S",
+        "title": "MesobInsights",
         "state":
-          "Website — Full-stack — Animation  — Pyhton - Django - Minimal.",
-        "desc": "A Simple Django project I built to get familiar with Pyhton - Django",
-        "url": "https://devleul.pythonanywhere.com/",
+          "Website — Full-stack — Animation  — Next Js - Postgres - Django - Minimal.",
+        "desc": "Unlock Success: Tailored Insights for Ethiopian Businesses with Mesob Insights",
+        "url": "https://mesobinsights.com/",
         "color": "bg-project"
       },
       {
