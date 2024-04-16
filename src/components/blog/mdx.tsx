@@ -7,8 +7,6 @@ import { highlight } from "sugar-high";
 import { LiveCode } from "./sandpack";
 
 function Table({ data }) {
-  console.log(data);
-
   let headers = data.headers.map((header, index) => (
     <th key={index}>{header}</th>
   ));
