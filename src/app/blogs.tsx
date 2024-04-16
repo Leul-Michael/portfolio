@@ -82,8 +82,8 @@ const Blogs = ({
     <section
       ref={container}
       className={cn(
-        "relative flex flex-col w-full h-full z-[2]",
-        !hideTitle && "bg-background"
+        "flex flex-col w-full h-full",
+        !hideTitle && "relative bg-background z-[2]"
       )}
     >
       <div

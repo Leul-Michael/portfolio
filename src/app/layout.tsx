@@ -1,19 +1,20 @@
-import "./globals.css"
-import type { Metadata } from "next"
-import { Darker_Grotesque } from "next/font/google"
-import { ScrollProvider } from "@/context/ScrollProvider"
-import GoogleAnalytics from "@bradgarropy/next-google-analytics"
+import "./globals.css";
+import type { Metadata } from "next";
+import { Darker_Grotesque } from "next/font/google";
+import { ScrollProvider } from "@/context/ScrollProvider";
+import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
-import Header from "@/components/header/header"
-import MenuWrapper from "@/components/header/menu-wrapper"
-import PrealoadWrapper from "@/app/preaload-wrapper"
-import Footer from "@/components/footer"
+import Header from "@/components/header/header";
+import MenuWrapper from "@/components/header/menu-wrapper";
+import PrealoadWrapper from "@/app/preaload-wrapper";
+import Footer from "@/components/footer";
+import { SandpackCSS } from "./blog/[slug]/sandpack";
 
 const darkerGrotesque = Darker_Grotesque({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
-})
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://leul-michael.vercel.app/"),
@@ -50,19 +51,23 @@ export const metadata: Metadata = {
   verification: {
     google: "_BzowsjaZDmPjXqlfa5s5p5QaApNryfM4vkQZUwQjdg",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <meta
-        name="google-site-verification"
-        content="_BzowsjaZDmPjXqlfa5s5p5QaApNryfM4vkQZUwQjdg"
-      />
+      <head>
+        <meta
+          name="google-site-verification"
+          content="_BzowsjaZDmPjXqlfa5s5p5QaApNryfM4vkQZUwQjdg"
+        />
+        <SandpackCSS />
+      </head>
+
       <body className={darkerGrotesque.className}>
         <ScrollProvider>
           <PrealoadWrapper />
@@ -76,5 +81,5 @@ export default function RootLayout({
         <GoogleAnalytics measurementId="G-CBCVL02J6P" />
       </body>
     </html>
-  )
+  );
 }

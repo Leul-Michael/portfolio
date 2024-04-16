@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Suspense, cache } from "react";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { unstable_noStore as noStore } from "next/cache";
 import { CustomMDX } from "@/components/blog/mdx";
 import { getBlogPosts } from "@/app/db/blogs";
-import HeroWrapper from "@/app/hero-wrapper";
 
 export async function generateMetadata({
   params,
@@ -22,9 +21,6 @@ export async function generateMetadata({
     summary: description,
     image,
   } = post.metadata;
-  let ogImage = image
-    ? `https://leul-michael.vercel.app${image}`
-    : `https://leul-michael.vercel.app/og?title=${title}`;
 
   return {
     title,
@@ -35,17 +31,11 @@ export async function generateMetadata({
       type: "article",
       publishedTime,
       url: `https://leul-michael.vercel.app/blog/${post.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
     },
   };
 }
@@ -102,9 +92,6 @@ export default function Blog({ params }: { params: { slug: string } }) {
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
-            image: post.metadata.image
-              ? `https://leul-michael.vercel.app${post.metadata.image}`
-              : `https://leul-michael.vercel.app/og?title=${post.metadata.title}`,
             url: `https://leul-michael.vercel.app/blog/${post.slug}`,
             author: {
               "@type": "Person",
