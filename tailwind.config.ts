@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 const config: Config = {
   content: [
@@ -33,8 +34,19 @@ const config: Config = {
           DEFAULT: "hsl(var(--clr-accent))",
         },
       },
+      typography: {
+        quoteless: {
+          css: {
+            "blockquote p:first-of-type::before": { content: "none" },
+            "blockquote p:first-of-type::after": { content: "none" },
+          },
+        },
+      },
     },
   },
-  plugins: [],
-}
-export default config
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
+  plugins: [typography],
+};
+export default config;

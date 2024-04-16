@@ -1,33 +1,27 @@
-import { cn } from "@/lib/utils"
-import { useHoverdBlogId, useSetHoverdBlogId } from "@/lib/zustand"
-
-type Blog = {
-  slug: number
-  imgPath: string
-  title: string
-  desc: string
-  color: string
-  min_read: number
-}
+import { cn } from "@/lib/utils";
+import { Blog } from "@/type/general";
+import { useHoverdBlogId, useSetHoverdBlogId } from "@/lib/zustand";
+import Link from "next/link";
 
 type BlogExcerptProps = {
-  manageModal: (active: boolean, index: number, x: number, y: number) => void
-  blog: Blog
-}
+  manageModal: (active: boolean, index: number, x: number, y: number) => void;
+  blog: Blog & { index: number };
+};
 
 const BlogExcerpt = ({ manageModal, blog }: BlogExcerptProps) => {
-  const hoverId = useHoverdBlogId()
-  const setHoverId = useSetHoverdBlogId()
+  const hoverId = useHoverdBlogId();
+  const setHoverId = useSetHoverdBlogId();
 
   return (
-    <article
+    <Link
+      href={`/blog/${blog.slug}`}
       onMouseEnter={(e) => {
-        manageModal(true, blog.slug, e.clientX, e.clientY)
-        setHoverId(`${blog.slug}`)
+        manageModal(true, blog.index, e.clientX, e.clientY);
+        setHoverId(`${blog.slug}`);
       }}
       onMouseLeave={(e) => {
-        manageModal(false, blog.slug, e.clientX, e.clientY)
-        setHoverId("")
+        manageModal(false, blog.index, e.clientX, e.clientY);
+        setHoverId("");
       }}
       className={cn(
         "blog w-full flex flex-col py-8 border-t border-border h-full",
@@ -40,19 +34,23 @@ const BlogExcerpt = ({ manageModal, blog }: BlogExcerptProps) => {
     >
       <div className="grid grid-cols-layout-300 md:grid-cols-layout-500 h-full gap-8 md:gap-16 items-center">
         <div className="flex flex-col justify-between items-start gap-4 h-full">
-          <p className="text-sm text-primary-muted/80">{blog.min_read} mins</p>
+          {/* <p className="text-sm text-primary-muted/80">{blog.min_read} mins</p> */}
           <h1 className="text-[2.5rem] font-semibold leading-[0.8]">
-            {blog.title}
+            {blog.metadata?.title}
           </h1>
           <div className="flex items-center gap-4">
-            <p className="text-lg font-semibold">Leul Michael</p>
-            <p className="text-sm text-primary-muted/80">Jan 20</p>
+            <p className="text-lg font-semibold">{blog.metadata.author}</p>
+            <p className="text-sm text-primary-muted/80">
+              {blog.metadata.publishedAt}
+            </p>
           </div>
         </div>
-        <p className="text-2xl font-medium leading-none">{blog.desc}</p>
+        <p className="text-2xl font-medium leading-none">
+          {blog.metadata.summary}
+        </p>
       </div>
-    </article>
-  )
-}
+    </Link>
+  );
+};
 
-export default BlogExcerpt
+export default BlogExcerpt;

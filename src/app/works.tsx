@@ -1,9 +1,8 @@
-import Link from "next/link"
-import works from "@/lib/works.json"
+import works from "@/lib/works.json";
 
-import Wrapper from "@/components/wrapper"
-import Button from "@/components/button"
-import WorkExcerpt from "@/components/excerpts/work-excerpt"
+import Wrapper from "@/components/wrapper";
+import Button from "@/components/button";
+import WorkExcerpt from "@/components/excerpts/work-excerpt";
 
 const Works = () => {
   return (
@@ -15,15 +14,15 @@ const Works = () => {
             <WorkExcerpt key={work.slug} project={work} />
           ))}
         </div>
-        <Link href="/works" className="self-start">
-          <Button
-            name="More Works"
-            className="px-6 py-2 text-xl capitalize font-semibold rounded-full text-primary-muted"
-          />
-        </Link>
+        <Button
+          asLink
+          href="/works"
+          name="More Works"
+          className="self-start px-6 py-2 text-xl capitalize font-semibold rounded-full text-primary-muted"
+        />
       </Wrapper>
     </section>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;
