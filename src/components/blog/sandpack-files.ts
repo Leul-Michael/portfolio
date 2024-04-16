@@ -27,7 +27,7 @@ export const HTML = `<!DOCTYPE html>
       </article>
     </main>
     <footer class="blog-footer">
-      <p>&copy; 2023 Minimal Blog</p>
+      <p>&copy; 2024 Minimal Blog</p>
     </footer>
   </body>
 </html>`;
@@ -112,7 +112,7 @@ export const Tailwind = `<!DOCTYPE html>
       </article>
     </main>
     <footer class="text-center py-8 bg-neutral-800 text-white">
-      <p>&copy; 2023 Minimal Blog</p>
+      <p>&copy; 2024 Minimal Blog</p>
     </footer>
   </body>
 </html>`;
@@ -210,7 +210,7 @@ export default function App() {
         </article>
       </main>
       <footer {...stylex.props(styles.headerFooter)}>
-        <p>&copy; 2023 Minimal Blog</p>
+        <p>&copy; 2024 Minimal Blog</p>
       </footer>
     </body>
   );

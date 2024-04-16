@@ -36,7 +36,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           href="mailto:leulmic18@gmail.com"
-          className="self-start secondary border text-primary-dark border-primary-dark px-6 py-2 self-start text-xl lowercase font-bold rounded-full"
+          className="secondary border text-primary-dark border-primary-dark px-6 py-2 self-start text-xl lowercase font-bold rounded-full"
         />
 
         <hr className="h-0 w-full mt-8 border-0" />
