@@ -1,25 +1,24 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { useScroll, useTransform, motion } from "framer-motion"
+import { useRef } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
 
-import Wrapper from "./wrapper"
-import Button from "./button"
-import SvgCurve from "./svg-curve"
-import Link from "next/link"
+import Wrapper from "./wrapper";
+import Button from "./button";
+import SvgCurve from "./svg-curve";
 
 const Footer = () => {
-  const container = useRef(null)
+  const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start end", "end end"],
-  })
+  });
 
   const y = useTransform(
     scrollYProgress,
     [0, 1],
     [typeof window !== "undefined" && window?.innerWidth <= 600 ? 0 : -400, 0]
-  )
+  );
 
   return (
     <motion.footer
@@ -31,17 +30,14 @@ const Footer = () => {
         <h1 className="text-[2.5rem] font-semibold leading-[0.8]">
           Let&apos;s talk about your next project.
         </h1>
-        <Link
+        <Button
+          asLink
+          name="leulmic18@gmail.com"
           target="_blank"
           rel="noreferrer"
           href="mailto:leulmic18@gmail.com"
-          className="self-start"
-        >
-          <Button
-            name="leulmic18@gmail.com"
-            className="secondary border text-primary-dark border-primary-dark px-6 py-2 self-start text-xl lowercase font-bold rounded-full"
-          />
-        </Link>
+          className="self-start secondary border text-primary-dark border-primary-dark px-6 py-2 self-start text-xl lowercase font-bold rounded-full"
+        />
 
         <hr className="h-0 w-full mt-8 border-0" />
         <SvgCurve light />
@@ -51,38 +47,35 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-4">
-            <Link target="_blank" rel="noreferrer" href="https://t.me/l_webdev">
-              <Button
-                name="Telegram"
-                className="secondary border text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
-              />
-            </Link>
-
-            <Link
+            <Button
+              asLink
+              name="Telegram"
+              target="_blank"
+              rel="noreferrer"
+              href="https://t.me/l_webdev"
+              className="secondary border text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
+            />
+            <Button
+              asLink
+              name="Github"
               target="_blank"
               rel="noreferrer"
               href="https://github.com/Leul-Michael"
-            >
-              <Button
-                name="Github"
-                className="secondary border text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
-              />
-            </Link>
-            <Link
+              className="secondary border text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
+            />
+            <Button
+              asLink
+              name="Linkedin"
               target="_blank"
               rel="noreferrer"
               href="https://www.linkedin.com/in/leul-michael"
-            >
-              <Button
-                name="Linkedin"
-                className="secondary border text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
-              />
-            </Link>
+              className="secondary border text-primary-dark border-primary-dark px-4 py-1 self-start text-sm capitalize font-bold rounded-full"
+            />
           </div>
         </div>
       </Wrapper>
     </motion.footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

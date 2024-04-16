@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { useSetShowMenu } from "@/lib/zustand"
-import { motion } from "framer-motion"
+import { useSetShowMenu } from "@/lib/zustand";
+import { motion } from "framer-motion";
 
-import Wrapper from "../wrapper"
-import Link from "next/link"
+import Wrapper from "../wrapper";
+import Link from "next/link";
 
 const menuSlide = {
   initial: { y: "-100%" },
@@ -13,7 +13,7 @@ const menuSlide = {
     y: "-100%",
     transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
   },
-}
+};
 
 const link = {
   initial: { y: 100 },
@@ -25,10 +25,10 @@ const link = {
     y: 100,
     transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i },
   }),
-}
+};
 
 const Menu = () => {
-  const setShowMenu = useSetShowMenu()
+  const setShowMenu = useSetShowMenu();
 
   return (
     <motion.nav
@@ -45,7 +45,7 @@ const Menu = () => {
               href="/"
               className="flex w-full overflow-hidden"
               onClick={() => {
-                setShowMenu(false)
+                setShowMenu(false);
               }}
             >
               <motion.div
@@ -68,7 +68,7 @@ const Menu = () => {
               href="/works"
               className="flex w-full overflow-hidden"
               onClick={() => {
-                setShowMenu(false)
+                setShowMenu(false);
               }}
             >
               <motion.div
@@ -91,7 +91,7 @@ const Menu = () => {
               href="/"
               className="flex w-full overflow-hidden"
               onClick={() => {
-                setShowMenu(false)
+                setShowMenu(false);
               }}
             >
               <motion.div
@@ -113,10 +113,10 @@ const Menu = () => {
           </div>
           <div className="flex flex-col gap-4 md:min-w-[300px] justify-center items-center">
             <Link
-              href="/"
+              href="/blog"
               className="flex self-start w-max overflow-hidden"
               onClick={() => {
-                setShowMenu(false)
+                setShowMenu(false);
               }}
             >
               <motion.div
@@ -136,7 +136,7 @@ const Menu = () => {
               href="/contact"
               className="flex self-start w-max overflow-hidden"
               onClick={() => {
-                setShowMenu(false)
+                setShowMenu(false);
               }}
             >
               <motion.div
@@ -156,7 +156,7 @@ const Menu = () => {
         </div>
       </Wrapper>
     </motion.nav>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
